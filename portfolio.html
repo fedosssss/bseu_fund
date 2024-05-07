@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+    <header class="header" id="up_portfolio">
+        <div class="header__container">
+            <nav class="header__navigation navigation">
+                <a class="header__link link" href="./index.html"><span class="header__logo logo">BSEU </span>Fund</a>
+                <ul class="site-nav list">
+                    <li class="site-nav__item item"><a
+                            class="site-nav__link link site-nav__link--top "
+                            href="./index.html">Главная</a></li>
+                    <li class="site-nav__item item"><a class="site-nav__link link site-nav__link--top site-nav__link--current-portfolio"
+                            href="./portfolio.html">Деятельность</a></li>
+                    <li class="site-nav__item item"><a class="site-nav__link link site-nav__link--top"
+                            href="./contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
+                <li class="auth-nav__item item">
+                    <a class="auth-nav__link link" target="_blank" href="mailto:bseufund@mail.ru">
+                        <svg width="19" height="16" class="auth-nav__icon">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg> bseufund@mail.ru
+                    </a>
+                </li>
+                <li class="auth-nav__item item">
+                    <a class="auth-nav__link link" target="_blank" href="tel:+375291040303">
+                        <svg width="16" height="22" class="auth-nav__icon">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg> +375(29)104-03-03
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_open"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="menu-container">
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg class="icon-close" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_close"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu-top">
+                    <ul class="mob-menu-nav list">
+                        <li class="mob-menu-nav__item item"><a
+                                class="mob-menu-nav__link link mob-menu-nav__link--top"
+                                href="./index.html">Главная</a></li>
+                        <li class="mob-menu-nav__item item"><a class="mob-menu-nav__link link mob-menu-nav__link--top mob-menu-nav__link--current"
+                                href="./portfolio.html">Деятельность</a></li>
+                        <li class="mob-menu-nav__item item"><a class="mob-menu-nav__link link mob-menu-nav__link--top"
+                                href="./contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-auth-nav list">
+                        <li class="mob-auth-nav__item item">
+                            <a class="mob-auth-nav__link link telephone" target="_blank" href="tel:+375291040303">
+                                +375(29)104-03-03
+                            </a>
+                        </li>
+                        <li class="mob-auth-nav__item item">
+                            <a class="mob-auth-nav__link link" target="_blank" href="mailto:bseufund@mail.ru">
+                                bseufund@mail.ru
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div><a href="#up_portfolio" class="anchor link">Вверх</a></div>
+        <section class="section-portfolio section">
+            <div class="container">
+                <ul class="list flex-portfolio">
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port1.jpg" alt="port1" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Проведение мероприятий - это не только организация встреч и мероприятий, но и создание неповторимой атмосферы, которая вдохновляет и увлекает участников.</p>
+                        </div>
+                            <div class="border">
+                                <h2 class="subtitle-portfolio zero">Проведение мероприятий</h2>
+                                <p class="text-portfolio zero">Вдохновение</p>
+                            </div>                      
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port2.jpg" alt="port2" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Мы содействуем развитию образования, обеспечивая доступ к ресурсам для студентов и образовательных учреждений.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Сделаем знания доступнее</h2>
+                            <p class="text-portfolio zero">Развитие</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port3.jpg" alt="port3" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Мы содействуем развитию образования, создавая праздничную атмосферу и предоставляя поддержку в виде подарков и особых событий для студентов и преподавателей.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Вместе к успеху</h2>
+                            <p class="text-portfolio zero">Победа</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port4.jpg" alt="port4" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Наши усилия направлены на создание сильного и сплоченного коллектива, в котором каждый член вносит свой вклад в достижение общих целей.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Сплочаем коллектив вместе</h2>
+                            <p class="text-portfolio zero">Единство</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port5.jpg" alt="port5" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Фонд поддержит Вас на каждом этапе процесса, поможет воплотить Ваши проекты в жизнь и достичь новых высот в инновациях.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Вместе к прогрессу</h2>
+                            <p class="text-portfolio zero">Поддержка</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port6.jpg" alt="port6" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Наш фонд является сторонником спортивных инициатив, предоставляя финансовую, организационную и моральную поддержку для проведения спортивных мероприятий.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Поддерживаем ЗОЖ</h2>
+                            <p class="text-portfolio zero">Элегантность</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port7.jpg" alt="port7" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Наша инициатива направлена на создание здорового и безопасного окружения для всех членов общества, и мы гордимся их преданностью делу здоровья и благополучия.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Мы за здоровье и безопасность</h2>
+                            <p class="text-portfolio zero">Здоровье</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port8.jpg" alt="port8" width="450" height="294" class="pixel">
+                            </picture>
+                            <p class="about">Наш фонд активно следует за последними спортивными трендами, отдыхая и тренируясь одновременно.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Всегда в тренде</h2>
+                            <p class="text-portfolio zero">Актуальность</p>
+                        </div>
+                    </li>
+                    <li class="item flex-element animation">
+                        <div class="thumb">
+                            <picture>
+                                <img src="./images/port9.jpg" alt="port9" width="370" height="450" class="pixel">
+                            </picture>
+                            <p class="about">Участие в соревнованиях подчеркивает элегантность, стиль и уверенность, а также поддерживает празднование индивидуальной красоты и достижений.</p>
+                        </div>
+                        <div class="border">
+                            <h2 class="subtitle-portfolio zero">Уверенность через конкурсы</h2>
+                            <p class="text-portfolio zero">Вдохновение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="bottom">
+        <div class="container container-footer">
+            <div class="bottom-contacts">
+                <a class="link web-studio-footer" href="./index.html"> <span class="web-color">BSEU</span> Fund</a>
+                <address class="contacts-info">
+                    <ul class="list">
+                        <li class="item"><a class="link location" href="https://maps.app.goo.gl/i3bMH46BZW99cWYW9" target="_blank"
+                                rel="noopener noreferrer nofollow">г. Минск, пр. Партизанский 26</a></li>
+                        <li class="item"><a class="link contacts" target="_blank" href="mailto:bseufund@mail.ru">bseufund@mail.ru</a></li>
+                        <li class="item"><a class="link contacts" target="_blank" href="tel:+375291040303">+375(29)104-03-03</a></li>
+                        <li class="item"><a class="link contacts" target="_blank" href="https://t.me/botgen_group">Связь с разработчиком сайта</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-email">
+                <b class="join">Подпишитесь на рассылку</b>
+                <form class="footer-form">  
+                    <button type="submit" class="button-footer-form"><a class="link white" target="_blank" href="https://t.me/bseu_fund_bot">Подписаться!</a>  
+                        <svg width="24" height="24" class="send-svg">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>  
+                </form> 
+            </div>   
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

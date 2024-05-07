@@ -1,0 +1,40 @@
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.icon-list__link {
+    display: inline-flex;
+    color: var(--media-color);
+    width: 100%;
+    height: 92px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--media-color);
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--secondary-web-text-color);
+            border: 1px solid var(--secondary-web-text-color);
+        }
+}
+
+.icon-list__icon--fill {
+    fill: currentColor;
+}
+
+.icon-list__item {
+    width: calc((100% - 30px) / 2);
+        
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+        }
+    @media screen and (min-width: 1200px) {
+            width: calc((100% - 150px) / 6);
+        }
+    
+}

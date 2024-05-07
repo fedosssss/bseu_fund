@@ -1,0 +1,244 @@
+.anchor {
+    display: none;
+        @include tablet {
+            z-index: 3;
+            position: fixed;
+            display: flex;
+            right: 30px;
+            bottom: 30px;
+            width: 74px;
+            height: 74px;
+            border-radius: 50%;
+            background-color: var(--secondary-web-text-color);
+            color: var(--third-web-text-color);
+            border: none;
+            letter-spacing: 0.06em;
+            line-height: 1.88;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: inherit;
+            font-weight: bold;
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus {
+                background-color: var(--button-active);
+            }
+    }
+    
+}
+
+.finger {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 15%;
+    top: 50%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.finger2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 15%;
+    top: 20%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.brush {
+    position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 25%;
+        top: 50%;
+        animation-name: spin;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+}
+
+.brush2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 25%;
+    top: 30%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.romb {
+    position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 1px solid white;
+        border-radius: 20%;
+        right: 25%;
+        top: 60%;
+        animation-name: spin;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+}
+
+.romb2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 20%;
+    right: 49%;
+    top: 70%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.romb3 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 20%;
+    right: 75%;
+    top: 30%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.romb4 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 20%;
+    left: 20%;
+    bottom: 20%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero {
+    position: relative;
+    background-color: var(--background-dark);
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        }
+}
+
+.hero--decorated {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
+    @include retina {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero2px-mob.jpg);
+    }
+
+    @include tablet {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero1px-tab.jpg);
+        @include retina {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/hero2px-tab.jpg);
+            }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-size: 1600px 600px;
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+        }
+    @include retina {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero2px.jpg);
+    }
+    
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 18px;
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-web-text-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+}
+
+.hero__btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    @media screen and (min-width: 480px) {
+            font-size: 16px;
+        }
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--third-web-text-color);
+    background: var(--secondary-web-text-color);
+    box-shadow: 0px 4px 4px var(--button-rgba);
+    padding: 10px 24px;
+    @media screen and (min-width: 1200px) {
+            padding: 10px 32px;
+        }
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            background-color: var(--button-active);
+        }
+}
+
